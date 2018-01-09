@@ -1620,8 +1620,10 @@ void ThreadScriptCheck() {
 
 bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex* pindex, CCoinsViewCache &view, bool fJustCheck)
 {
+    // TODO: why is the genesis block special?
     // Check it again in case a previous version let a bad block in
-    if (!CheckBlock(state, !fJustCheck, !fJustCheck))
+    // don't check PoW for the genesis block
+    if (!CheckBlock(state, !fJustCheck && hashPrevBlock != 0, !fJustCheck))
         return false;
 
     // verify that the view's current state corresponds to the previous block

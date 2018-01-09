@@ -1489,8 +1489,9 @@ public:
             return error("%s() : deserialize or I/O error", __PRETTY_FUNCTION__);
         }
 
-        // Check the header
-        if (!CheckProofOfWork(GetPoWHash(), nBits))
+        // TODO: why is the genesis block special?
+        // Check the PoW but not for the genesis block
+        if (hashPrevBlock != 0 && !CheckProofOfWork(GetPoWHash(), nBits))
             return error("CBlock::ReadFromDisk() : errors in block header");
 
         return true;
