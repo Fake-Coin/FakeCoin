@@ -66,8 +66,6 @@ namespace Checkpoints
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
-        // FakeCoin has no checkpoints yet!
-        return true;
         if (fTestNet) return true; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return true;
@@ -112,8 +110,6 @@ namespace Checkpoints
 
     int GetTotalBlocksEstimate()
     {
-        // FakeCoin has no checkpoints yet!
-        return 0;
         if (fTestNet) return 0; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return 0;
@@ -125,8 +121,6 @@ namespace Checkpoints
 
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
     {
-        // FakeCoin has no checkpoints yet!
-        return NULL;
         if (fTestNet) return NULL; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return NULL;
