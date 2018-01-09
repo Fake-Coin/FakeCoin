@@ -3,8 +3,8 @@ FakeCoin : A totaly Real Crypto
 
 https://www.reddit.com/r/FakeCoin/
 
-Copyright (c) 2009-2013 Bitcoin Developers |
-Copyright (c) 2011-2013 Litecoin Developers |
+Copyright (c) 2009-2014 Bitcoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
 Copyright (c) 2017-2018 Diamond Group
 
 FakeCoin is Secure, safe, and fast.
@@ -41,7 +41,7 @@ If it is a simple/trivial/non-controversial change, then one of the FakeCoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion (if they haven't already) on the
+submitter will be asked to start a discussion with the devs and community.
 [Subreddit](https://www.reddit.com/r/FakeCoin/).
 
 The patch will be accepted if there is broad consensus that it is a good thing.
