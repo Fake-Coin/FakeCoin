@@ -9,8 +9,6 @@ export BDB_PATH=`brew --prefix berkeley-db@4`
 export OPENSSL_PATH=`brew --prefix openssl`
 export MINIUPNPC_PATH=`brew --prefix miniupnpc`
 
-/usr/local/opt/qt
-
 /usr/local/opt/qt/bin/qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 \
 	BOOST_INCLUDE_PATH=$BOOST_PATH/include \
 	BOOST_LIB_PATH=$BOOST_PATH/lib \
