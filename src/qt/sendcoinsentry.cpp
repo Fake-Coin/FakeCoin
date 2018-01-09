@@ -1,3 +1,7 @@
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #include "sendcoinsentry.h"
 #include "ui_sendcoinsentry.h"
 
@@ -72,6 +76,8 @@ void SendCoinsEntry::setModel(WalletModel *model)
 
     if(model && model->getOptionsModel())
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
+
+    connect(ui->payAmount, SIGNAL(textChanged()), this, SIGNAL(payAmountChanged()));
 
     clear();
 }

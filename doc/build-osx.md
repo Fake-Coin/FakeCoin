@@ -111,7 +111,7 @@ Rerunning "openssl version" should now return the correct version.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:fakecoin-project/fakecoin.git fakecoin
+        git clone https://github.com/litecoin-project/fakecoin.git
         cd fakecoin
 
 2.  Modify source in order to pick up the `openssl` library.

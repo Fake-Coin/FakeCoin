@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.5.1
+!define VERSION 0.8.6.9
 !define COMPANY "FakeCoin project"
 !define URL http://www.fakecoin.org/
 
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile fakecoin-0.8.5.1-win32-setup.exe
+OutFile fakecoin-0.8.6.9-win32-setup.exe
 InstallDir $PROGRAMFILES\FakeCoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.5.1
-VIAddVersionKey ProductName FakeCoin
+VIProductVersion 0.8.6.9
+VIAddVersionKey ProductName Litecoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
