@@ -20,16 +20,19 @@ CONFIG += thread
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
+## Supress 'invalid suffix on literal' errors
+macx:QMAKE_CXXFLAGS+=-Wno-reserved-user-defined-literal
+
 OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
-    # Mac: compile for maximum compatibility (10.5, 32-bit)
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.5 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk
-    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.5 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk
-    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.5 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk
+    # Mac: compile for maximum compatibility (10.10, 32-bit)
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.10 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.10 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.10 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
     !win32:!macx {
         # Linux: static link and extra security (see: https://wiki.debian.org/Hardening)
@@ -58,7 +61,9 @@ win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
 contains(USE_QRCODE, 1) {
     message(Building with QRCode support)
     DEFINES += USE_QRCODE
-    LIBS += /usr/local/lib/libqrencode.a
+    !macx:LIBS += /usr/local/lib/libqrencode.a
+    macx:LIBS += /usr/local/opt/qrencode/lib/libqrencode.dylib
+    macx:INCLUDEPATH += /usr/local/opt/qrencode/include
 }
 
 # use: qmake "USE_UPNP=1" ( enabled by default; default)
