@@ -3264,6 +3264,19 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             vRecv >> pfrom->strSubVer;
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
+
+        // Disconnect certain incompatible clients
+        const char *badSubVers[] = { "/LitecoinCore", "/Satoshi" };
+        for (int x = 0; x < 2; x++)
+        {
+            if (pfrom->cleanSubVer.find(badSubVers[x], 0) == 0)
+            {
+                printf("invalid subver %s at %s, disconnecting\n", pfrom->cleanSubVer.c_str(), pfrom->addr.ToString().c_str());
+                pfrom->fDisconnect = true;
+                return false;
+            }
+        }
+
         if (!vRecv.empty())
             vRecv >> pfrom->nStartingHeight;
         if (!vRecv.empty())
