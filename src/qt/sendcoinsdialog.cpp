@@ -36,7 +36,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 #endif
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a FakeCoin address (e.g. tSCYNE9TvpeQ4bjDMuvr9VbNGSuE8Gu8rY)"));
 #endif
 
     addEntry();
@@ -440,7 +440,7 @@ void SendCoinsDialog::coinControlClipboardChange()
 void SendCoinsDialog::coinControlFeatureChanged(bool checked)
 {
     ui->frameCoinControl->setVisible(checked);
-    
+
     if (!checked && model) // coin control features disabled
         CoinControlDialog::coinControl->SetNull();
 }
@@ -464,7 +464,7 @@ void SendCoinsDialog::coinControlChangeChecked(int state)
         else
             CoinControlDialog::coinControl->destChange = CNoDestination();
     }
-    
+
     ui->lineEditCoinControlChange->setEnabled((state == Qt::Checked));
     ui->labelCoinControlChangeLabel->setVisible((state == Qt::Checked));
 }
@@ -475,7 +475,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString & text)
     if (model)
     {
         CoinControlDialog::coinControl->destChange = CBitcoinAddress(text.toStdString()).Get();
-        
+
         // label for the change address
         ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:black;}");
         if (text.isEmpty())
@@ -494,7 +494,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString & text)
             {
                 CPubKey pubkey;
                 CKeyID keyid;
-                CBitcoinAddress(text.toStdString()).GetKeyID(keyid);   
+                CBitcoinAddress(text.toStdString()).GetKeyID(keyid);
                 if (model->getPubKey(keyid, pubkey))
                     ui->labelCoinControlChangeLabel->setText(tr("(no label)"));
                 else
@@ -512,7 +512,7 @@ void SendCoinsDialog::coinControlUpdateLabels()
 {
     if (!model || !model->getOptionsModel() || !model->getOptionsModel()->getCoinControlFeatures())
         return;
-    
+
     // set pay amounts
     CoinControlDialog::payAmounts.clear();
     for(int i = 0; i < ui->entries->count(); ++i)
@@ -521,12 +521,12 @@ void SendCoinsDialog::coinControlUpdateLabels()
         if(entry)
             CoinControlDialog::payAmounts.append(entry->getValue().amount);
     }
-        
+
     if (CoinControlDialog::coinControl->HasSelected())
     {
         // actual coin control calculation
         CoinControlDialog::updateLabels(model, this);
-        
+
         // show coin control stats
         ui->labelCoinControlAutomaticallySelected->hide();
         ui->widgetCoinControl->show();
@@ -539,4 +539,3 @@ void SendCoinsDialog::coinControlUpdateLabels()
         ui->labelCoinControlInsuffFunds->hide();
     }
 }
-

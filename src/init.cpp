@@ -1003,10 +1003,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 InitWarning(msg);
             }
             else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Litecoin") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of FakeCoin") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE)
             {
-                strErrors << _("Wallet needed to be rewritten: restart Litecoin to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart FakeCoin to complete") << "\n";
                 printf("%s", strErrors.str().c_str());
                 return InitError(strErrors.str());
             }
