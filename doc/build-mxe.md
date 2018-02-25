@@ -50,14 +50,14 @@ Download and unpack berkley db:
 
 ```
 cd /mnt
-wget http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz
-tar zxvf db-5.3.28.tar.gz
+wget https://download.fakco.in/libs/src/db-4.8.30.NC.tar.gz
+tar zxvf db-4.8.30.NC.tar.gz
 ```
 
 Make bash script for compilation:
 
 ```
-cd /mnt/db-5.3.28
+cd /mnt/db-4.8.30.NC
 touch compile-db.sh
 chmod ugo+x compile-db.sh
 ```
