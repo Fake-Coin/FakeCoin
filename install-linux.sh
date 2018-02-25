@@ -27,5 +27,6 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 ./autogen.sh 
-./configure 
-make -j8 deploy
+./configure --prefix=$PWD/dist
+make -j8
+make install
