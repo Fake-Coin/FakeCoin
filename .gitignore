@@ -32,3 +32,8 @@ qrc_*.cpp
 build
 
 !src/leveldb*/Makefile
+Makefile.Debug
+Makefile.Release
+object_script.fakecoin-qt.Debug
+object_script.fakecoin-qt.Release
+release/fakecoin-qt.exe
