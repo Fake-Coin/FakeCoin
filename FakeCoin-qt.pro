@@ -64,7 +64,7 @@ contains(USE_QRCODE, 1) {
     !macx:LIBS += /usr/local/lib/libqrencode.a
     macx:LIBS += /usr/local/opt/qrencode/lib/libqrencode.dylib
     macx:INCLUDEPATH += /usr/local/opt/qrencode/include
-    win32:LIBS += /mnt/q/i686-w64-mingw32/lib/libqrencode.dll.a
+    win32:LIBS += /mnt/q/i686-w64-mingw32/lib/libqrencode.a
     win32:INCLUDEPATH += /mnt/q/i686-w64-mingw32/include # contains qrencode.h
 }
 
