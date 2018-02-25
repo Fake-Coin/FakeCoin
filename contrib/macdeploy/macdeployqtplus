@@ -726,6 +726,9 @@ if config.dmg is not None:
 
     def runHDIUtil(verb, image_basename, **kwargs):
         hdiutil_args = ["hdiutil", verb, image_basename + ".dmg"]
+        if verb == "create":
+            hdiutil_args.append("-fs")
+            hdiutil_args.append("HFS+")
         if kwargs.has_key("capture_stdout"):
             del kwargs["capture_stdout"]
             run = subprocess.check_output
