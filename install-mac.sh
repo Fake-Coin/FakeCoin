@@ -13,8 +13,8 @@ export CPPFLAGS="-I/usr/local/opt/openssl/include -I/usr/local/opt/boost@1.60/in
 export QR_LIBS="/usr/local/opt/qrencode/lib/libqrencode.dylib"
 export QR_CFLAGS="-I/usr/local/opt/qrencode/include"
 
-export CXXFLAGS="-std=c++11 -arch x86_64"
-export OBJCXXFLAGS="-std=c++11 -arch x86_64"
+export CXXFLAGS="-std=c++11 -arch x86_64 -Wno-deprecated-declarations"
+export OBJCXXFLAGS="-std=c++11 -arch x86_64 -Wno-deprecated-declarations"
 
 ./autogen.sh
 ./configure --with-gui=qt5 --with-qrencode --enable-upnp-default --enable-shared=no --disable-tests
