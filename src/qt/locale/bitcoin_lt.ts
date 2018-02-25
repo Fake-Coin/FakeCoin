@@ -164,8 +164,8 @@
         <translation>Piniginė užšifruota</translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Litecoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti litecoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
+        <source>FakeCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your fakecoins from being stolen by malware infecting your computer.</source>
+        <translation>FakeCoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti fakecoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -271,8 +271,8 @@
         <translation>Atidaryti &amp;URI...</translation>
     </message>
     <message>
-        <source>Litecoin Core client</source>
-        <translation>Litecoin Core klientas</translation>
+        <source>FakeCoin Core client</source>
+        <translation>FakeCoin Core klientas</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -283,12 +283,12 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Siųsti monetas Litecoin adresui</translation>
+        <source>Send coins to a FakeCoin address</source>
+        <translation>Siųsti monetas FakeCoin adresui</translation>
     </message>
     <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation>Keisti litecoin konfigūracijos galimybes</translation>
+        <source>Modify configuration options for FakeCoin</source>
+        <translation>Keisti fakecoin konfigūracijos galimybes</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -311,8 +311,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>FakeCoin</source>
+        <translation>FakeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -327,8 +327,8 @@
         <translation>&amp;Gauti</translation>
     </message>
     <message>
-        <source>Show information about Litecoin Core</source>
-        <translation>Rodyti informaciją apie Litecoin Core</translation>
+        <source>Show information about FakeCoin Core</source>
+        <translation>Rodyti informaciją apie FakeCoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -359,16 +359,16 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin branduolys</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin branduolys</translation>
     </message>
     <message>
-        <source>&amp;About Litecoin Core</source>
-        <translation>&amp;Apie Litecoin Core</translation>
+        <source>&amp;About FakeCoin Core</source>
+        <translation>&amp;Apie FakeCoin Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n Litecoin tinklo aktyvus ryšys</numerusform><numerusform>%n Litecoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Litecoin tinklo aktyvūs ryšiai</numerusform></translation>
+        <source>%n active connection(s) to FakeCoin network</source>
+        <translation><numerusform>%n FakeCoin tinklo aktyvus ryšys</numerusform><numerusform>%n FakeCoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n FakeCoin tinklo aktyvūs ryšiai</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -627,8 +627,8 @@ Adresas: %4</translation>
         <translation>Įvestas adresas „%1“ jau yra adresų knygelėje.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Litecoin adresas.</translation>
+        <source>The entered address "%1" is not a valid FakeCoin address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis FakeCoin adresas.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -649,16 +649,16 @@ Adresas: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin branduolys</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin branduolys</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versija</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
-        <translation>Apie Litecoin Core</translation>
+        <source>About FakeCoin Core</source>
+        <translation>Apie FakeCoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -692,12 +692,12 @@ Adresas: %4</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Litecoin Core.</source>
-        <translation>Sveiki atvykę į Litecoin Core.</translation>
+        <source>Welcome to FakeCoin Core.</source>
+        <translation>Sveiki atvykę į FakeCoin Core.</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin branduolys</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin branduolys</translation>
     </message>
     <message>
         <source>Error</source>
@@ -718,20 +718,20 @@ Adresas: %4</translation>
         <translation>&amp;Pagrindinės</translation>
     </message>
     <message>
-        <source>Automatically start Litecoin after logging in to the system.</source>
+        <source>Automatically start FakeCoin after logging in to the system.</source>
         <translation>Automatiškai paleisti Bitkoin programą įjungus sistemą.</translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
-        <translation>&amp;Paleisti Litecoin programą su window sistemos paleidimu</translation>
+        <source>&amp;Start FakeCoin on system login</source>
+        <translation>&amp;Paleisti FakeCoin programą su window sistemos paleidimu</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Litecoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the FakeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti FakeCoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -778,8 +778,8 @@ Adresas: %4</translation>
         <translation>Naudotojo sąsajos &amp;kalba:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
-        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Litecoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FakeCoin.</source>
+        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus FakeCoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -980,8 +980,8 @@ Adresas: %4</translation>
         <translation>Išvalyti konsolę</translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
-        <translation>Sveiki atvykę į Litecoin RPC konsolę.</translation>
+        <source>Welcome to the FakeCoin RPC console.</source>
+        <translation>Sveiki atvykę į FakeCoin RPC konsolę.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1249,7 +1249,7 @@ Adresas: %4</translation>
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Litecoin address</source>
+        <source>Sign the message to prove you own this FakeCoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -1265,8 +1265,8 @@ Adresas: %4</translation>
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Litecoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified FakeCoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas FakeCoin adresas</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1316,8 +1316,8 @@ Adresas: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin branduolys</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin branduolys</translation>
     </message>
     <message>
         <source>[testnet]</source>

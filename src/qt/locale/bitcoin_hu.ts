@@ -66,12 +66,12 @@
         <translation>Fogadó címek</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezekről a címekről küldhetsz litecoint. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
+        <source>These are your FakeCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ezekről a címekről küldhetsz fakecoint. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezekkel a címekkel fogadhatsz litecoint. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
+        <source>These are your FakeCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ezekkel a címekkel fogadhatsz fakecoint. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -188,8 +188,8 @@
         <translation>Add meg a tárca új jelszavát.&lt;br/&gt;Olyan jelszót válassz, ami &lt;b&gt;legalább tíz véletlenszerű karakterből&lt;/b&gt; vagy &lt;b&gt;legalább 8 véletlenszerű szóból&lt;/b&gt; áll.</translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>A Litecoin Core most bezár, hogy befejezze a titkosítást. Ne feledd: a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy adathalász programok megfertőzzék a számítógéped és ellopják a litecoinjaid.</translation>
+        <source>FakeCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your fakecoins from being stolen by malware infecting your computer.</source>
+        <translation>A FakeCoin Core most bezár, hogy befejezze a titkosítást. Ne feledd: a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy adathalász programok megfertőzzék a számítógéped és ellopják a fakecoinjaid.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>&amp;URI azonosító megnyitása...</translation>
     </message>
     <message>
-        <source>Litecoin Core client</source>
-        <translation>Litecoin Core kliens</translation>
+        <source>FakeCoin Core client</source>
+        <translation>FakeCoin Core kliens</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Litecoin küldése megadott címre</translation>
+        <source>Send coins to a FakeCoin address</source>
+        <translation>FakeCoin küldése megadott címre</translation>
     </message>
     <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation>Litecoin konfigurációs opciók</translation>
+        <source>Modify configuration options for FakeCoin</source>
+        <translation>FakeCoin konfigurációs opciók</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>FakeCoin</source>
+        <translation>FakeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Fogadás</translation>
     </message>
     <message>
-        <source>Show information about Litecoin Core</source>
-        <translation>Litecoin Core információ megjelenítése</translation>
+        <source>Show information about FakeCoin Core</source>
+        <translation>FakeCoin Core információ megjelenítése</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Litecoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your FakeCoin addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a FakeCoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Litecoin-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified FakeCoin addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt FakeCoin-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "litecoin:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and fakecoin: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "fakecoin:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
-        <source>&amp;About Litecoin Core</source>
-        <translation>&amp;A Litecoin Core-ról</translation>
+        <source>&amp;About FakeCoin Core</source>
+        <translation>&amp;A FakeCoin Core-ról</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>"litecoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a fakecoin: URI or payment request</source>
+        <translation>"fakecoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message>
-        <source>Show the Litecoin Core help message to get a list with possible Litecoin command-line options</source>
-        <translation>A Litecoin Core súgóüzenet megjelenítése a Litecoin lehetséges parancssori kapcsolóival.</translation>
+        <source>Show the FakeCoin Core help message to get a list with possible FakeCoin command-line options</source>
+        <translation>A FakeCoin Core súgóüzenet megjelenítése a FakeCoin lehetséges parancssori kapcsolóival.</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Litecoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Litecoin-hálózattal</numerusform></translation>
+        <source>%n active connection(s) to FakeCoin network</source>
+        <translation><numerusform>%n aktív kapcsolat a FakeCoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a FakeCoin-hálózattal</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -784,8 +784,8 @@ Cím: %4
         <translation>A megadott "%1" cím már szerepel a címjegyzékben.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Litecoin-cím.</translation>
+        <source>The entered address "%1" is not a valid FakeCoin address.</source>
+        <translation>A megadott "%1" cím nem egy érvényes FakeCoin-cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -818,8 +818,8 @@ Cím: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -830,8 +830,8 @@ Cím: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
-        <translation>A Litecoin Core-ról</translation>
+        <source>About FakeCoin Core</source>
+        <translation>A FakeCoin Core-ról</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -878,12 +878,12 @@ Cím: %4
         <translation>Üdvözlünk</translation>
     </message>
     <message>
-        <source>Welcome to Litecoin Core.</source>
-        <translation>Üdvözlünk a Litecoin Core-ban.</translation>
+        <source>Welcome to FakeCoin Core.</source>
+        <translation>Üdvözlünk a FakeCoin Core-ban.</translation>
     </message>
     <message>
-        <source>Litecoin Core will download and store a copy of the Litecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>A Litecoin Core le fogja tölteni és tárolni fogja a Litecoin blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
+        <source>FakeCoin Core will download and store a copy of the FakeCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>A FakeCoin Core le fogja tölteni és tárolni fogja a FakeCoin blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -894,8 +894,8 @@ Cím: %4
         <translation>Saját adatkönyvtár használata:</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -940,11 +940,11 @@ Cím: %4
         <translation>&amp;Fő</translation>
     </message>
     <message>
-        <source>Automatically start Litecoin after logging in to the system.</source>
-        <translation>Induljon el a Litecoin a számítógép bekapcsolásakor</translation>
+        <source>Automatically start FakeCoin after logging in to the system.</source>
+        <translation>Induljon el a FakeCoin a számítógép bekapcsolásakor</translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
+        <source>&amp;Start FakeCoin on system login</source>
         <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
     </message>
     <message>
@@ -988,16 +988,16 @@ Cím: %4
         <translation>szakértő</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Litecoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the FakeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A FakeCoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Litecoin hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the FakeCoin network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a FakeCoin hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1040,8 +1040,8 @@ Cím: %4
         <translation>Felhasználófelület nye&amp;lve:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Litecoin ujraindítása után lép érvénybe.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FakeCoin.</source>
+        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a FakeCoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1087,8 +1087,8 @@ Cím: %4
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Litecoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FakeCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a FakeCoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1150,8 +1150,8 @@ Cím: %4
         <translation>URI kezelés</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>A litecoint nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start fakecoin: click-to-pay handler</source>
+        <translation>A fakecoint nem lehet elindítani: click-to-pay handler</translation>
     </message>
     </context>
 <context>
@@ -1176,8 +1176,8 @@ Cím: %4
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. %1)</source>
-        <translation>Ad meg egy Litecoin címet (pl: %1)</translation>
+        <source>Enter a FakeCoin address (e.g. %1)</source>
+        <translation>Ad meg egy FakeCoin címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1390,8 +1390,8 @@ Cím: %4
         <translation>Konzol törlése</translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
-        <translation>Üdv a Litecoin RPC konzoljában!</translation>
+        <source>Welcome to the FakeCoin RPC console.</source>
+        <translation>Üdv a FakeCoin RPC konzoljában!</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1731,7 +1731,7 @@ Cím: %4
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Nincs ennyi litecoin az egyenlegeden.</translation>
+        <translation>Nincs ennyi fakecoin az egyenlegeden.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
@@ -1742,8 +1742,8 @@ Cím: %4
         <translation>Többször szerepel ugyanaz a cím. Egy küldési műveletben egy címre csak egyszer lehet küldeni.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
-        <translation>Figyelmeztetés: Érvénytelen Litecoin cím</translation>
+        <source>Warning: Invalid FakeCoin address</source>
+        <translation>Figyelmeztetés: Érvénytelen FakeCoin cím</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1809,8 +1809,8 @@ Cím: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Litecoin Core is shutting down...</source>
-        <translation>A Litecoin Core leáll...</translation>
+        <source>FakeCoin Core is shutting down...</source>
+        <translation>A FakeCoin Core leáll...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1860,7 +1860,7 @@ Cím: %4
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Litecoin address</source>
+        <source>Sign the message to prove you own this FakeCoin address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -1919,8 +1919,8 @@ Cím: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoin Core</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2564,7 +2564,7 @@ Cím: %4
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég litecoinod.</translation>
+        <translation>Nincs elég fakecoinod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

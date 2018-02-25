@@ -46,8 +46,8 @@
         <translation>V&amp;ali</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Litecoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <source>These are your FakeCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu FakeCoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -152,8 +152,8 @@
         <translation>Rahakott krüpteeritud</translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Litecoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista litecoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>FakeCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your fakecoins from being stolen by malware infecting your computer.</source>
+        <translation>FakeCoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista fakecoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -255,12 +255,12 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Saada münte Litecoini aadressile</translation>
+        <source>Send coins to a FakeCoin address</source>
+        <translation>Saada münte FakeCoini aadressile</translation>
     </message>
     <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation>Muuda Litecoini seadeid</translation>
+        <source>Modify configuration options for FakeCoin</source>
+        <translation>Muuda FakeCoini seadeid</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -283,8 +283,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>FakeCoin</source>
+        <translation>FakeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -311,12 +311,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Litecoini aadressiga</translation>
+        <source>Sign messages with your FakeCoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma FakeCoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Litecoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified FakeCoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud FakeCoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -335,12 +335,12 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoini tuumik</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoini tuumik</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Litecoini võrku</numerusform><numerusform>%n aktiivset ühendust Litecoini võrku</numerusform></translation>
+        <source>%n active connection(s) to FakeCoin network</source>
+        <translation><numerusform>%n aktiivne ühendus FakeCoini võrku</numerusform><numerusform>%n aktiivset ühendust FakeCoini võrku</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -551,8 +551,8 @@ Aadress: %4⏎</translation>
         <translation>Selline aadress on juba olemas: "%1"</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole Litecoinis kehtiv.</translation>
+        <source>The entered address "%1" is not a valid FakeCoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole FakeCoinis kehtiv.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -573,16 +573,16 @@ Aadress: %4⏎</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoini tuumik</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoini tuumik</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versioon</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
-        <translation>Kirjeldus Litecoini Tuumast</translation>
+        <source>About FakeCoin Core</source>
+        <translation>Kirjeldus FakeCoini Tuumast</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -620,8 +620,8 @@ Aadress: %4⏎</translation>
         <translation>Teretulemast</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoini tuumik</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoini tuumik</translation>
     </message>
     <message>
         <source>Error</source>
@@ -646,12 +646,12 @@ Aadress: %4⏎</translation>
         <translation>Valikud</translation>
     </message>
     <message>
-        <source>Automatically start Litecoin after logging in to the system.</source>
-        <translation>Käivita Litecoin süsteemi logimisel.</translation>
+        <source>Automatically start FakeCoin after logging in to the system.</source>
+        <translation>Käivita FakeCoin süsteemi logimisel.</translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
-        <translation>&amp;Start Litecoin sisselogimisel</translation>
+        <source>&amp;Start FakeCoin on system login</source>
+        <translation>&amp;Start FakeCoin sisselogimisel</translation>
     </message>
     <message>
         <source>MB</source>
@@ -678,8 +678,8 @@ Aadress: %4⏎</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Litecoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the FakeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>FakeCoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -726,8 +726,8 @@ Aadress: %4⏎</translation>
         <translation>Kasutajaliidese &amp;keel:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Litecoini käivitamisel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FakeCoin.</source>
+        <translation>Kasutajaliidese keele valimise koht. Valik rakendub FakeCoini käivitamisel.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -765,8 +765,8 @@ Aadress: %4⏎</translation>
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Litecoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FakeCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt FakeCoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -792,8 +792,8 @@ Aadress: %4⏎</translation>
         <translation>URI käsitsemine</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Litecoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start fakecoin: click-to-pay handler</source>
+        <translation>FakeCoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
     </context>
 <context>
@@ -908,16 +908,16 @@ Aadress: %4⏎</translation>
         <translation>Debugimise logifail</translation>
     </message>
     <message>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Litecoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <source>Open the FakeCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ava FakeCoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Puhasta konsool</translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
-        <translation>Teretulemast Litecoini RPC konsooli.</translation>
+        <source>Welcome to the FakeCoin RPC console.</source>
+        <translation>Teretulemast FakeCoini RPC konsooli.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1213,8 +1213,8 @@ Aadress: %4⏎</translation>
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Litecoin address</source>
-        <translation>Allkirjasta sõnum Litecoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this FakeCoin address</source>
+        <translation>Allkirjasta sõnum FakeCoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1237,8 +1237,8 @@ Aadress: %4⏎</translation>
         <translation>Kinnitamiseks sisesta allkirjastamise aadress, sõnum (kindlasti kopeeri täpselt ka reavahetused, tühikud, tabulaatorid jms) ning allolev signatuur.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Litecoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified FakeCoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud FakeCoini aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1304,8 +1304,8 @@ Aadress: %4⏎</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoini tuumik</translation>
+        <source>FakeCoin Core</source>
+        <translation>FakeCoini tuumik</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>

@@ -159,8 +159,8 @@
         <translation>Barra de herramientas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n conexión activa a la red Litecoin </numerusform><numerusform>%n conexiones activas a la red Litecoin</numerusform></translation>
+        <source>%n active connection(s) to FakeCoin network</source>
+        <translation><numerusform>%n conexión activa a la red FakeCoin </numerusform><numerusform>%n conexiones activas a la red FakeCoin</numerusform></translation>
     </message>
     <message>
         <source>Up to date</source>
