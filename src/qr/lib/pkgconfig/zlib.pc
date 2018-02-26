@@ -1,0 +1,13 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/Users/valken/src/fakco.in/deps/i686-w64-mingw32/lib
+sharedlibdir=/Users/valken/src/fakco.in/deps/i686-w64-mingw32/lib
+includedir=/Users/valken/src/fakco.in/deps/i686-w64-mingw32/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
