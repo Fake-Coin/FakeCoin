@@ -7,7 +7,7 @@
 First install the MXE Dependencies: 
 
 ```
-sudo apt-get install p7zip-full autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libtool libltdl-dev libssl-dev libxml-parser-perl make openssl patch perl pkg-config python ruby scons sed unzip wget xz-utils
+sudo apt-get install p7zip-full autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libtool libltdl-dev libssl-dev libxml-parser-perl make openssl patch perl pkg-config python ruby scons sed unzip wget xz-utils libtool-bin libgtk2.0-dev
 ```
 
 On 64bit Ubuntu also install:
@@ -20,7 +20,7 @@ Next clone the MXE git repo (always clone the repo, downloading the archive may 
 
 ```
 cd /mnt
-git clone https://github.com/mxe/mxe.git
+sudo git clone https://github.com/mxe/mxe.git
 ```
 
 Your environment will be placed in `/mnt/mxe`
@@ -33,13 +33,13 @@ Compile boost:
 
 ```
 cd /mnt/mxe
-make MXE_TARGETS="i686-w64-mingw32.static" boost
+sudo make MXE_TARGETS="i686-w64-mingw32.static" boost
 ```
 
 Compile Qt4:
 
 ```
-make MXE_TARGETS="i686-w64-mingw32.static" qt
+sudo make MXE_TARGETS="i686-w64-mingw32.static" qt
 ```
 
 MXE will automatically determine all dependencies and compile it.
@@ -50,16 +50,16 @@ Download and unpack berkley db:
 
 ```
 cd /mnt
-wget https://download.fakco.in/libs/src/db-4.8.30.NC.tar.gz
-tar zxvf db-4.8.30.NC.tar.gz
+sudo wget https://download.fakco.in/libs/src/db-4.8.30.NC.tar.gz
+sudo tar zxvf db-4.8.30.NC.tar.gz
 ```
 
 Make bash script for compilation:
 
 ```
 cd /mnt/db-4.8.30.NC
-touch compile-db.sh
-chmod ugo+x compile-db.sh
+sudo touch compile-db.sh
+sudo chmod ugo+x compile-db.sh
 ```
 
 Content of compile-db.sh:
@@ -88,23 +88,23 @@ make install
 Compile berkley db:
 
 ```
-./compile-db.sh
+sudo ./compile-db.sh
 ```
 
 Download and unpack miniupnpc:
 
 ```
 cd /mnt
-wget http://miniupnp.free.fr/files/miniupnpc-1.6.20120509.tar.gz
-tar zxvf miniupnpc-1.6.20120509.tar.gz
+sudo wget http://miniupnp.free.fr/files/miniupnpc-1.6.20120509.tar.gz
+sudo tar zxvf miniupnpc-1.6.20120509.tar.gz
 ```
 
 Make bash script for compilation:
 
 ```
 cd /mnt/miniupnpc-1.6.20120509
-touch compile-m.sh
-chmod ugo+x compile-m.sh
+sudo touch compile-m.sh
+sudo chmod ugo+x compile-m.sh
 ```
 
 Content of compile-m.sh:
@@ -127,22 +127,22 @@ cp libminiupnpc.a $MXE_PATH/usr/i686-w64-mingw32.static/lib
 Compile miniupnpc:
 
 ```
-./compile-m.sh
+sudo ./compile-m.sh
 ```
 
 Next we need to download Valken's libraries to finish our build environment:
 
 ```
-mkdir /mnt/q
+sudo mkdir /mnt/q
 cd /mnt/q
-wget https://download.fakco.in/libs/prebuilt/i686-w64-mingw32-static.zip
-unzip i686-w64-mingw32-static.zip
+sudo wget https://download.fakco.in/libs/prebuilt/i686-w64-mingw32-static.zip
+sudo unzip i686-w64-mingw32-static.zip
 ```
 
 Finally we need to add the MXE bins to PATH:
 
 ```
-export PATH=/mnt/mxe/usr/bin:$PATH
+sudo export PATH=/mnt/mxe/usr/bin:$PATH
 ```
 
 And now that we have MXE and Valken's Prebuilt Libraries we can go on to building FakeCoin! 
@@ -153,7 +153,7 @@ Clone the most current version of the FakeCoin sourcecode:
 
 ```
 cd /mnt
-git clone https://github.com/Fake-Coin/FakeCoin-qt.git
+sudo git clone https://github.com/Fake-Coin/FakeCoin-qt.git
 ```
 
 Compile FakeCoin-qt.exe
