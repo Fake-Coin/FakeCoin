@@ -20,6 +20,8 @@
 
 #define MESSAGE_START_SIZE 4
 
+typedef unsigned char MessageStartChars[MESSAGE_START_SIZE];
+
 /** Message header.
  * (4) message start.
  * (12) command.
@@ -30,10 +32,10 @@ class CMessageHeader
 {
 public:
     CMessageHeader();
-    CMessageHeader(const char* pszCommand, unsigned int nMessageSizeIn);
+    CMessageHeader(const char* pszCommand, unsigned int nMessageSizeIn, const MessageStartChars &pchMessageStartIn);
 
     std::string GetCommand() const;
-    bool IsValid() const;
+    bool IsValid(const MessageStartChars &pchMessageStartIn) const;
 
     ADD_SERIALIZE_METHODS;
 
