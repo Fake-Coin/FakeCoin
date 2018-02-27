@@ -1,8 +1,8 @@
 PACKAGE=qt
-$(package)_version=5.10.1
-$(package)_download_path=http://download.qt.io/official_releases/qt/5.10/$($(package)_version)/single
-$(package)_file_name=$(package)-everywhere-src-$($(package)_version).tar.zx
-$(package)_sha256_hash=05ffba7b811b854ed558abf2be2ddbd3bb6ddd0b60ea4b5da75d277ac15e740a
+$(package)_version=5.2.1
+$(package)_download_path=http://download.qt.io/archive/qt/5.2/$($(package)_version)/single
+$(package)_file_name=$(package)-everywhere-opensource-src-$($(package)_version).tar.gz
+$(package)_sha256_hash=84e924181d4ad6db00239d87250cc89868484a14841f77fb85ab1f1dbdcd7da1
 $(package)_dependencies=openssl
 $(package)_linux_dependencies=freetype fontconfig dbus libxcb libX11 xproto libXext
 $(package)_build_subdir=qtbase
