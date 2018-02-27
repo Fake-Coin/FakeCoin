@@ -98,7 +98,7 @@ Ubuntu Zesty 17.04 <sup>[2](#footnote2)</sup>:
 Once the tool chain is installed the build steps are common:
 
 Note that for WSL the FakeCoin-qt source path MUST be somewhere in the default mount file system, for
-example /usr/src/bitcoin, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
+example /usr/src/FakeCoin, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
 This means you cannot use a directory that located directly on the host Windows file system to perform the build.
 
 Acquire the source in the usual way:
