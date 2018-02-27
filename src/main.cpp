@@ -4495,8 +4495,13 @@ bool ProcessMessages(CNode* pfrom)
         // at this point, any failure means we can delete the current message
         it++;
 
+        if (memcmp(msg.hdr.pchMessageStart, Params().MessageStart(),
+                   MESSAGE_START_SIZE) == 0) {
+            pfrom->fUsesFakeMagic = true;
+        } 
+
         // Scan for message start
-        if (memcmp(msg.hdr.pchMessageStart, Params().MessageStart(), MESSAGE_START_SIZE) != 0) {
+        if (memcmp(msg.hdr.pchMessageStart, pfrom->GetMagic(Params()), MESSAGE_START_SIZE) != 0) {
             LogPrintf("PROCESSMESSAGE: INVALID MESSAGESTART %s peer=%d\n", SanitizeString(msg.hdr.GetCommand()), pfrom->id);
             fOk = false;
             break;
@@ -4504,7 +4509,7 @@ bool ProcessMessages(CNode* pfrom)
 
         // Read header
         CMessageHeader& hdr = msg.hdr;
-        if (!hdr.IsValid())
+        if (!hdr.IsValid( pfrom->GetMagic(Params()) ))
         {
             LogPrintf("PROCESSMESSAGE: ERRORS IN HEADER %s peer=%d\n", SanitizeString(hdr.GetCommand()), pfrom->id);
             continue;
