@@ -3685,24 +3685,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
 
-        // Whitelist known clients.
-        const char *knownSubVers[] = { "/Mhoy Money", "/btcwire" };
-        bool allowedClient = false;
-        for (int x = 0; x < 2; x++)
-        {
-            if (pfrom->cleanSubVer.find(knownSubVers[x], 0) == 0)
-            {
-                allowedClient = true;
-                break;
-            }
-        }
-        if (!allowedClient) {
-            LogPrintf("invalid subver %s at %s, disconnecting\n", pfrom->cleanSubVer, pfrom->addr.ToString());
-            pfrom->PushMessage("reject", strCommand, REJECT_INVALID, string("invalid client subver"));
-            pfrom->fDisconnect = true;
-            return true;
-        }
-
         if (!vRecv.empty())
             vRecv >> pfrom->nStartingHeight;
         if (!vRecv.empty())
