@@ -6,7 +6,6 @@
 #ifndef BITCOIN_NET_H
 #define BITCOIN_NET_H
 
-#include "chainparams.h"
 #include "bloom.h"
 #include "compat.h"
 #include "hash.h"
@@ -304,8 +303,6 @@ public:
     int64_t nPingUsecTime;
     // Whether a ping is requested.
     bool fPingQueued;
-    // Whether the node uses the FakeCoin magic to communicate.
-    std::atomic<bool> fUsesFakeMagic;
 
     CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn = "", bool fInboundIn=false);
     ~CNode();
@@ -331,12 +328,6 @@ public:
         assert(nRefCount >= 0);
         return nRefCount;
     }
-
-
-    const MessageStartChars &
-    GetMagic(const CChainParams &params) const {
-        return fUsesFakeMagic ? params.MessageStart() : params.LitecoinMessageStart();
-    } 
 
     // requires LOCK(cs_vRecvMsg)
     unsigned int GetTotalRecvSize()

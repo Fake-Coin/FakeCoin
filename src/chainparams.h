@@ -14,12 +14,12 @@
 
 #include <vector>
 
+typedef unsigned char MessageStartChars[MESSAGE_START_SIZE];
+
 struct CDNSSeedData {
     std::string name, host;
     CDNSSeedData(const std::string &strName, const std::string &strHost) : name(strName), host(strHost) {}
 };
-
-const MessageStartChars pchMessageStartLitecoin = {0xfb, 0xc0, 0xb6, 0xdb};
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
@@ -43,7 +43,6 @@ public:
 
     const uint256& HashGenesisBlock() const { return hashGenesisBlock; }
     const MessageStartChars& MessageStart() const { return pchMessageStart; }
-    const MessageStartChars& LitecoinMessageStart() const { return pchMessageStartLitecoin; }
     const std::vector<unsigned char>& AlertKey() const { return vAlertPubKey; }
     int GetDefaultPort() const { return nDefaultPort; }
     const uint256& ProofOfWorkLimit() const { return bnProofOfWorkLimit; }
