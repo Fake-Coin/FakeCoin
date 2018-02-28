@@ -149,7 +149,7 @@
              <string>Whether to show coin control features or not.</string>
             </property>
             <property name="text">
-             <string>Enable coin &amp;control features</string>
+             <string>Enable coin &amp;control features (Valken Mode)</string>
             </property>
            </widget>
           </item>

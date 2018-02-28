@@ -32,7 +32,7 @@
    <item>
     <widget class="QLabel" name="warningLabel">
      <property name="text">
-      <string notr="true">Placeholder text</string>
+      <string notr="true">Passphrase</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>

@@ -74,6 +74,12 @@
      </item>
      <item>
       <widget class="QDialogButtonBox" name="okButton">
+       <property name="toolTip">
+        <string>Anyway, See you later!</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>3</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>

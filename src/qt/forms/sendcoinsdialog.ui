@@ -87,7 +87,7 @@
              <string notr="true">font-weight:bold;</string>
             </property>
             <property name="text">
-             <string>Coin Control Features</string>
+             <string>Coin Control</string>
             </property>
            </widget>
           </item>
@@ -617,7 +617,7 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>68</height>
+        <height>69</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">

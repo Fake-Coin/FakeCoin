@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Coin Selection</string>
+   <string>Coin Selection (Valken View)</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
