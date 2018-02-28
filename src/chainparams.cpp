@@ -99,10 +99,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xdb;
+        pchMessageStart[0] = 0x3C;
+        pchMessageStart[1] = 0xD1;
+        pchMessageStart[2] = 0xAF;
+        pchMessageStart[3] = 0x3E;
         vAlertPubKey = ParseHex(""); // TODO(scyne)
         nDefaultPort = 9333;
         bnProofOfWorkLimit = uint256(0).SetCompact(0x1e10024c);
