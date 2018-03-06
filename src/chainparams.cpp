@@ -16,6 +16,8 @@
 
 #include "chainparamsseeds.h"
 
+#include "arith_uint256.h"
+
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     CMutableTransaction txNew;
@@ -74,7 +76,7 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
-        consensus.powLimit = uint256S("ffffeffdb3ffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit = ArithToUint256((arith_uint256(0).SetCompact(0x1e10024c)));
         consensus.BIP34Height = 40111;
         consensus.BIP34Hash = uint256S("0x76e30c3e03bba41416fdbb93df036add5a12151539bc387505f615a85eb5abb7");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
