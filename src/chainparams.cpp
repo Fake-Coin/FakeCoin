@@ -100,7 +100,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1577836800; // January 1, 2020
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000db78ada04560");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -139,17 +139,25 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-            ( 4096, uint256S("0xd954347803936341886051d042cc1b119e9e9a145db439ed1104c66fd44a73cd"))
-            ( 8192, uint256S("0xde0263e41b31d7da0f3e04d02bc8c5670d3bae50e284e5006147984a03949c3f"))
-            (16384, uint256S("0xa9fe2b154084f8f06ad16d817d390bf3702f8e2ffd07e8afdc93f0b33cd5d7fb"))
+            (  2608, uint256S("0x22722429354af4f4ef8b9de55f0825611aa348d98fcb05d71e3c3adfaab4b94c"))
+            (  4096, uint256S("0xd954347803936341886051d042cc1b119e9e9a145db439ed1104c66fd44a73cd"))
+            (  5216, uint256S("0x9726ea3e333ca64e6cffa5fa9fe0e27338634890b36ad09b75c9c04eee59d423"))
+            (  8192, uint256S("0xde0263e41b31d7da0f3e04d02bc8c5670d3bae50e284e5006147984a03949c3f"))
+            ( 10432, uint256S("0x8c53c852c42c4ae1fad07c12cf8d259baf3ca873d24cac84cdf679d92dc6dcb6"))
+            ( 16384, uint256S("0xa9fe2b154084f8f06ad16d817d390bf3702f8e2ffd07e8afdc93f0b33cd5d7fb"))
+            ( 20864, uint256S("0x12e76ce3468f0c2fa8d53458ac69967faf88cc1e1d43641cf3f2afb55d2e363e"))
 
             // last common ancestor
-            (32254, uint256S("0x340d0f58bc3e28e65a441be2e8557243230632dc81ed8cf65f6f0677a18eb6cb"))
-            
-            (32768, uint256S("0xe14dad16cf0c68bc4d007397877c08a09a77f0be21584a154c23547ff8b0cf70")),
+            ( 32254, uint256S("0x340d0f58bc3e28e65a441be2e8557243230632dc81ed8cf65f6f0677a18eb6cb"))
 
-            1519059616, // * UNIX timestamp of last checkpoint block
-            37218,   // * total number of transactions between genesis and last checkpoint
+            ( 32256, uint256S("0xc9fe7345c0783b1aae75c13363d0166d0f7bdb93ae457fa92837ccc345e7d607"))
+            ( 32768, uint256S("0xe14dad16cf0c68bc4d007397877c08a09a77f0be21584a154c23547ff8b0cf70"))
+            ( 41730, uint256S("0xc73361ab42465711db774796dce5686cefd8e44008638caaf02218a6ed4f75bb"))
+            ( 42336, uint256S("0x1c94da6f01911e9b2a14b14362513b7fc9131396c184701c99d67c7d89184c69"))
+            ( 65536, uint256S("0x3f79ee9d8271e0da76e7c9115255e56102d463cea9da41c0d920959be73d8e88")),
+
+            1523574686, // * UNIX timestamp of last checkpoint block
+            90007,   // * total number of transactions between genesis and last checkpoint
             //   (the tx=... number in the SetBestChain debug.log lines)
             1000     // * estimated number of transactions per day after checkpoint
 	};
