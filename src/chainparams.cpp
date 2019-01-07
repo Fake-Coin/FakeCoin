@@ -103,7 +103,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1577836800; // January 1, 2020
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000db78ada04560");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000001499b48548f15");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x340d0f58bc3e28e65a441be2e8557243230632dc81ed8cf65f6f0677a18eb6cb"); // 32254
@@ -126,7 +126,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x4b93d6e51df856f85831ce4de87d0acf4cc0c7c3e01d7303e923919ef18f5d5a"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("fakco.in", "seed.fakco.in"));
+        vSeeds.emplace_back("seed.fakco.in", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0x7F);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,0x7D);
@@ -156,13 +156,18 @@ public:
                 { 41730, uint256S("0xc73361ab42465711db774796dce5686cefd8e44008638caaf02218a6ed4f75bb")},
                 { 42336, uint256S("0x1c94da6f01911e9b2a14b14362513b7fc9131396c184701c99d67c7d89184c69")},
                 { 65536, uint256S("0x3f79ee9d8271e0da76e7c9115255e56102d463cea9da41c0d920959be73d8e88")},
+
+                {  70560, uint256S("0x0c13302ff41a3453391c0b1bbbbc91e7b16a3e6646cb82bc2a18c317e98ef029")},
+                { 100800, uint256S("0xb987279c8cff7ed4224f92633b0fb62f5a318c5507e46825e66b6ab77fcf2544")},
+                { 151200, uint256S("0x7afeffd76ef5abfb0a87aeba80d6dc50ea4cc5896775b4b1ecf74b93b373a16a")},
+                { 201600, uint256S("0xe0c18fe0632f738d740e6a3696bbf2fa8abcfceaf70c9cc34a89570cdca8d7e5")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block 59c9b9d3fec105bdc716d84caa7579503d5b05b73618d0bf2d5fa639f780a011 (height 1353397).
-            1523574686, // * UNIX timestamp of last known number of transactions
-            90007,  // * total number of transactions between genesis and that timestamp
+            1545739667, // * UNIX timestamp of last known number of transactions
+            337595,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
             0.01     // * estimated number of transactions per second after that timestamp
         };
